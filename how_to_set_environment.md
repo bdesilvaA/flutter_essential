@@ -40,7 +40,15 @@ class Environment {
 }
 ```
 
-4. use variables as you want in the code base
+4. intialize dotenv before runapp() in main function to select the right env file
+```dart
+Future<void> main() async {
+  await dotenv.load(fileName: Environment.fileName);
+  runApp(const MyApp());
+}
+```
+
+5. use variables as you want in the code base
 ```dart
 #example
 print(${Environment.fileName})
