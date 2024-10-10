@@ -20,7 +20,7 @@ VERSION=<sample_version>
 *dotenv.production*
 ```
 FIREBASE_URL=<sample_url>
-VERSION=<sample#_version>
+VERSION=<sample_version>
 ```
 
 3. add Environment class to haddle the data as the environment
