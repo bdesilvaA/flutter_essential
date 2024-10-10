@@ -23,7 +23,14 @@ FIREBASE_URL=<sample_url>
 VERSION=<sample_version>
 ```
 
-3. add Environment class to haddle the data as the environment
+3. define files as assets in pubspec.yaml
+   ```yaml
+     assets:
+    - dotenv.development
+    - dotenv.production
+   ```
+
+4. add Environment class to haddle the data as the environment
 ```dart
 import 'package:flutter/foundation.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
@@ -40,7 +47,7 @@ class Environment {
 }
 ```
 
-4. intialize dotenv before runapp() in main function to select the right env file
+5. intialize dotenv before runapp() in main function to select the right env file
 ```dart
 Future<void> main() async {
   await dotenv.load(fileName: Environment.fileName);
@@ -48,7 +55,7 @@ Future<void> main() async {
 }
 ```
 
-5. use variables as you want in the code base
+6. use variables as you want in the code base
 ```dart
 #example
 print(${Environment.fileName})
