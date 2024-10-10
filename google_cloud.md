@@ -14,7 +14,7 @@
 *dotenv.development*
 ```
 FIREBASE_URL=<sample_url>
-VERSION=<sample#_version>
+VERSION=<sample_version>
 ```
 
 *dotenv.production*
