@@ -58,7 +58,7 @@ Future<void> main() async {
 6. use variables as you want in the code base
 ```dart
 #example
-print(${Environment.fileName})
+print(${Environment.firebaseStorageUrl})
 print(${Environment.appVersion})
 ```
 
