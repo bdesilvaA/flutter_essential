@@ -2,7 +2,7 @@
 
 1. add dependencey
    
-```dart
+```yaml
   #environment
   flutter_dotenv: ^5.1.0
 ```
@@ -57,7 +57,7 @@ Future<void> main() async {
 
 6. use variables as you want in the code base
 ```dart
-#example
+//example
 print(${Environment.firebaseStorageUrl})
 print(${Environment.appVersion})
 ```
